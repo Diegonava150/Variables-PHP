@@ -336,21 +336,22 @@
 				// Comprobamos si se ha enviado el formulario
 				if (isset($_POST['num1-11'])) {
 					$num = $_POST['num1-11'];
-					$x = $num; // valor inicial de x
-					$error = 1e-10; // criterio de convergencia
-					$iteraciones = 0; // contador de iteraciones
+					$raiz = $num ** 0.5
+// 					$x = $num; // valor inicial de x
+// 					$error = 1e-10; // criterio de convergencia
+// 					$iteraciones = 0; // contador de iteraciones
 		
-					// iteración de Newton-Raphson
-					while (abs($x * $x - $num) > $error) {
-						$y = $num / $x;
-						$x = ($x + $y) / 2;
-						$iteraciones++;
-					}
+// 					// iteración de Newton-Raphson
+// 					while (abs($x * $x - $num) > $error) {
+// 						$y = $num / $x;
+// 						$x = ($x + $y) / 2;
+// 						$iteraciones++;
+// 					}
+// 						echo "<p>$x (en $iteraciones iteraciones)</p>";
 
 					// Mostramos el resultado
 					echo "<div class='resultado'>";
 					echo "<h2>La raíz cuadrada de $num es:</h2>";
-					echo "<p>$x (en $iteraciones iteraciones)</p>";
 					echo "</div>";
 				}
 				break;
