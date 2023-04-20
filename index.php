@@ -88,7 +88,7 @@
 				// Comprobamos si se ha enviado el formulario
 				if (isset($_POST['num1-2'])) {
 					$num1 = $_POST['num1-2'];
-					$resultado = pow(2, $num1);
+					$resultado = pow($num1, 2);
 
 					// Mostramos el resultado
 					echo "<div class='resultado'>";
