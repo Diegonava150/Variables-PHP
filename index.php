@@ -395,7 +395,7 @@
 				if (isset($_POST['num1-13'])) {
 					$segundos = $_POST['num1-13'];
 					$horas = floor($segundos / 3600);
-					$minutos = floor(($minutos / 60) % 60);
+					$minutos = floor(($segundos / 60) % 60);
 
 					// Mostramos el resultado
 					echo "<div class='resultado'>";
