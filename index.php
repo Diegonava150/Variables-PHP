@@ -291,7 +291,7 @@
 				break;
 			case 10:
 				echo '<div id="tab" class="tabcontent">';
-				echo '<h2>Calcular valor de la compra</h2>';
+				echo '<h2>Calcular el salario total del empleado</h2>';
 				echo '<form method="post">';
 				echo '<label for="num1-10">Ingrese el salario diario del empleado:</label>';
 				echo '<input type="number" id="num1-10" name="num1-10" required>';
